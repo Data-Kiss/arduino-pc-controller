@@ -7,7 +7,7 @@ import os
 wsh = comctl.Dispatch("WScript.Shell")
 
 # This port may vary on your system, so change as appropriate.
-ard = serial.Serial('com6', 9600)
+arduino = serial.Serial('com6', 9600)
 
 
 def press_spacebar():
@@ -19,22 +19,17 @@ def put_pc_to_sleep():
 
 
 def shutdown_pc():
-    os.system("shutdown /s /t 1");
+    os.system("shutdown /s /t 1")
 
 
 def main():
     while True:
-        #line = ard.read(10)
-        line = str(ard.readline().rstrip().decode("utf-8"))
-        #   line = 'Sleep'
+        line = str(arduino.readline().rstrip().decode("utf-8"))
         if line == 'Spacebar':
-            #print("Spacebar")
             press_spacebar()
         if line == 'Sleep':
-            #print("Sleep")
             put_pc_to_sleep()
         if line == 'Shutdown':
-            #print("Shutdown")
             shutdown_pc()
 
 
