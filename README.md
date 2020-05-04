@@ -11,7 +11,7 @@ This project allows you to send data from your Arduino to your PC or Laptop usin
 
 I'm not an expert in Arduino/electronics, so feel free to correct me if you see something wrong here (mine hasn't blown up yet, so hopefully it's okay). I am using an Arduino Nano and a Bluetooth HC-05 module. Below is a diagram of the circuit I am using:
 
-![Circuit](https://github.com/Data-Kiss/arduino-pc-controller/arduino-pc-controller.png "Arduino HC-05 Circuit")
+![Circuit](https://github.com/Data-Kiss/arduino-pc-controller/blob/master/arduino-pc-controller.png" Arduino HC-05 Circuit")
 
 ## Python Script
 
