@@ -1,2 +1,2 @@
 pyserial==3.4
-pywin32==227
+pywin32==301
